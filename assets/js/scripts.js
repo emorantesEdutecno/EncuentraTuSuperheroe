@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  //rama gh-pages creada
+  //rama master actualizada
   $('#formHeroe').submit(function(event){
     event.preventDefault();
     console.log('funciona submit');
