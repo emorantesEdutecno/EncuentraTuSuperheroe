@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="pagina de web de superheroes">
+     <meta name="keywords" content="superheroes">
+     <meta name="author" content="Didier Morantes">
+    <title>Encuentra a tu Superheroe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+
+  <body>
+    <nav>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                        <img src="assets/img/sh2.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top"> <span>SuperHero</span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+    </nav>
+    <main>
+      <header class="text-center">
+          <img src="assets/img/sh1.jpg" class="img-fluid" alt="imagen banner">
+      </header>
+
+      <section>
+
+        <div class="container">
+            <h1>Encuentra a tu SuperHeroe</h1>
+            <form id="formHeroe">
+              <div class="mb-3">
+                <label for="txtSuperheroe" class="form-label">Ingresa el numero del Superhero a buscar</label>
+                <input type="text" class="form-control" id="txtSuperheroe" aria-describedby="superheroeHelp">
+                <div id="superheroeHelp" class="form-text">Ingresa numeros</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="row">
+            <article class="col-md-6">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                        <p id="mensajeHeroe"></p>
+                    </div>
+                    <div class="col-md-8">der</div>
+                  </div>
+                </div>
+
+            </article>
+            <aside class="col-md-6">
+                    <div id="chartContainer" style="height: 300px;">.</div>
+            </aside>
+        </div>
+      </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	  <script src="assets/js/scripts.js"></script>
+  </body>
+  </html>
