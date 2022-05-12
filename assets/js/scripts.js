@@ -1,5 +1,15 @@
 $(document).ready(function(){
-  //rama gh-pages actualizada 
+  //rama gh-pages actualizada
+  var laImagen = '';
+
+  $('#imagenHeroe').on('error', function(){
+    console.log('Error en la imagen');
+      laImagen = 'assets/img/sh1.jpg';
+      console.log(`Nueva Ruta Imagen: ${laImagen}`);
+      $('#imagenHeroe').attr("src", laImagen );
+  });
+
+
   $('#formHeroe').submit(function(event){
     event.preventDefault();
     console.log('funciona submit');
@@ -15,7 +25,7 @@ $(document).ready(function(){
       success: function(data){
             $('#mensajeHeroe').text('SuperHeroe Encontrado');
             console.log(data);
-            let laImagen = data.image.url;
+            laImagen = data.image.url;
             // $('#imagenHeroe').attr("src", `${data.image.url}`);
             $('#imagenHeroe').attr("src", laImagen );
 
