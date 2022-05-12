@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //rama gh-pages creada
   $('#formHeroe').submit(function(event){
     event.preventDefault();
     console.log('funciona submit');
@@ -7,7 +8,7 @@ $(document).ready(function(){
 
     $.ajax({
       type:"GET",
-      url:`https://superheroapi.com/api/4905856019427443/${idHeroe}`,
+      url:`https://superheroapi.com/api.php/4905856019427443/${idHeroe}`,
       success: function(data){
             $('#mensajeHeroe').text('SuperHeroe Encontrado');
             console.log(data);
@@ -54,12 +55,5 @@ $(document).ready(function(){
       },
       dataType: 'json',
     }); // fin ajax
-
-
-
-
   });//Fin submit
-
-
-
 });//fin ready
