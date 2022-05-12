@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  //rama master actualizada
+  //rama master actualizada 
   var laImagen = '';
 
   $('#imagenHeroe').on('error', function(){
