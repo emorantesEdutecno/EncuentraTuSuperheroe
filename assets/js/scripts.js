@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //rama gh-pages creada
   $('#formHeroe').submit(function(event){
     event.preventDefault();
     console.log('funciona submit');
